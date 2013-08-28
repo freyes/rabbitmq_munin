@@ -17,7 +17,7 @@ setup(
     description = "A munin plugin to monitor rabbitmq queues.",
     license = "BSD",
     keywords = "rabbitmq munin plugin",
-    url = "https://github.com/freyes/rabbitmq-munin",
+    url = "https://github.com/freyes/rabbitmq_munin",
     py_modules=["rabbitmq_munin", ],
     install_requires=["pyrabbit", ],
     long_description=read('README.md'),
