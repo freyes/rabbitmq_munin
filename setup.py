@@ -11,14 +11,14 @@ def read(fname):
 
 setup(
     name = "rabbitmq-munin",
-    version = "0.1dev",
+    version = "0.1",
     author = "Felipe Reyes",
     author_email = "freyes@tty.cl",
     description = "A munin plugin to monitor rabbitmq queues.",
     license = "BSD",
     keywords = "rabbitmq munin plugin",
     url = "https://github.com/freyes/rabbitmq-munin",
-    py_modules=["rabbitmq_muning", ],
+    py_modules=["rabbitmq_munin", ],
     install_requires=["pyrabbit", ],
     long_description=read('README.md'),
     classifiers=[
