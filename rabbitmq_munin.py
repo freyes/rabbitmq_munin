@@ -62,10 +62,19 @@ def print_message_stats(options):
     try:
         overview = client.get_overview()
         stats = overview["message_stats"]
-        print "message_stats_publish.value", stats["publish"]
-        print "message_stats_publish_rate.value", stats["publish_details"]["rate"]
     except:
-        pass
+        return
+    try:
+        print "message_stats_publish.value ",
+        print  stats["publish"]
+    except:
+        print ""
+
+    try:
+        print "message_stats_publish_rate.value ",
+        print stats["publish_details"]["rate"]
+    except:
+        print ""
 
 
 def setup_options(argv=None):
