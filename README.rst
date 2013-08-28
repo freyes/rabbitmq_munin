@@ -8,15 +8,15 @@ By default monitors the celery queue for the user 'guest'
 Installation
 ------------
 
-The easiest way to install the code is to use [pip](http://www.pip-installer.org/).
+The easiest way to install the code is to use `pip`_.
 
-Install the newest version from [PyPI](http://pypi.python.org/pypi/rabbitmq-munin):
+Install the newest version from `PyPI`_.:
 
-        pip install rabbitmq-munin
+    pip install rabbitmq-munin
 
 Install the latest development version:
 
-        pip install git+https://github.com/freyes/rabbitmq_munin.git#egg=rabbitmq-munin
+    pip install git+https://github.com/freyes/rabbitmq_munin.git#egg=rabbitmq-munin
 
 The other option is to download and uncompress the code manually and execute the
 included _setup.py_ script for installation:
@@ -48,10 +48,16 @@ Dependencies
 
 Python packages:
 
-* [pyrabbit](https://pypi.python.org/pypi/pyrabbit)
+* `pyrabbit`_
 
 Rabbitmq plugins:
 
-* [Management Plugin](http://www.rabbitmq.com/management.html), you can install it with the following command:
+* `Management Plugin`_, you can install it with the following command:
 
     rabbitmq-plugins enable rabbitmq_management
+
+
+.. _PyPI: http://pypi.python.org/pypi/rabbitmq-munin
+.. _pip: http://www.pip-installer.org/
+.. _pyrabbit: https://pypi.python.org/pypi/pyrabbit
+.. _Management Plugin: http://www.rabbitmq.com/management.html
