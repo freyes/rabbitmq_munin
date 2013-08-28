@@ -20,7 +20,7 @@ setup(
     url = "https://github.com/freyes/rabbitmq_munin",
     py_modules=["rabbitmq_munin", ],
     install_requires=["pyrabbit", ],
-    long_description=read('README.md'),
+    long_description=read('README.rst'),
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Topic :: Utilities",
