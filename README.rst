@@ -10,20 +10,20 @@ Installation
 
 The easiest way to install the code is to use `pip`_.
 
-Install the newest version from `PyPI`_.:
+Install the newest version from `PyPI`_.::
 
     pip install rabbitmq-munin
 
-Install the latest development version:
+Install the latest development version::
 
     pip install git+https://github.com/freyes/rabbitmq_munin.git#egg=rabbitmq-munin
 
 The other option is to download and uncompress the code manually and execute the
-included _setup.py_ script for installation:
+included _setup.py_ script for installation::
 
         ./setup.py install
 
-To make the plugin available to the munin-node you can run the following commands:
+To make the plugin available to the munin-node you can run the following commands::
 
     cat > /etc/munin/plugins/rabbitmq_munin <<EOF
     #!/bin/bash
@@ -32,7 +32,7 @@ To make the plugin available to the munin-node you can run the following command
     chmod +x /etc/munin/plugins/rabbitmq_munin
 
 Once munin can run the plugin, you can configure it as any other munin plugin 
-(in /etc/munin/plugin-conf.d/munin-node) and the config will look like this:
+(in /etc/munin/plugin-conf.d/munin-node) and the config will look like this::
 
     [rabbitmq_munin]
     env.username guest
@@ -52,7 +52,7 @@ Python packages:
 
 Rabbitmq plugins:
 
-* `Management Plugin`_, you can install it with the following command:
+* `Management Plugin`_, you can install it with the following command::
 
     rabbitmq-plugins enable rabbitmq_management
 
