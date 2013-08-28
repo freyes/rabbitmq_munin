@@ -5,7 +5,7 @@ from pyrabbit.api import Client
 
 
 CONFIG = """graph_title Rabbit stats
-graph_vlabel foo
+graph_vlabel Queued Messages
 messages.label queue size (depth)
 message_stats_publish.label published messages
 message_stats_publish_rate.label published messages rate
