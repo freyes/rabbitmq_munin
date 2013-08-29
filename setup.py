@@ -11,7 +11,7 @@ def read(fname):
 
 setup(
     name = "rabbitmq-munin",
-    version = "0.2",
+    version = "0.3.dev",
     author = "Felipe Reyes",
     author_email = "freyes@tty.cl",
     description = "A munin plugin to monitor rabbitmq queues.",
