@@ -5,6 +5,20 @@ A simple plugin for munin to monitor the number of messages in a queue.
 
 By default monitors the celery queue for the user 'guest'
 
+Features
+--------
+
+This plugin monitor the following stats:
+
+* Queue Size (depth), number of messages in the queue.
+* Published Messages, number of messages that have been pushed into the queue,
+* Published Messages Rate, number of messages per seconds pushed into the queue.
+* Channels, number of channels open.
+* Connections, number of connections.
+* Consumers, number of consumers.
+* Exchanges, number of exchanges.
+* Queues, number of queues.
+
 Installation
 ------------
 
