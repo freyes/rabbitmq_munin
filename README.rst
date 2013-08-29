@@ -19,17 +19,13 @@ Install the latest development version::
     pip install git+https://github.com/freyes/rabbitmq_munin.git#egg=rabbitmq-munin
 
 The other option is to download and uncompress the code manually and execute the
-included _setup.py_ script for installation::
+included `setup.py` script for installation::
 
-        ./setup.py install
+    ./setup.py install
 
 To make the plugin available to the munin-node you can run the following commands::
 
-    cat > /etc/munin/plugins/rabbitmq_munin <<EOF
-    #!/bin/bash
-    rabbitmq_munin "$@"
-    EOF
-    chmod +x /etc/munin/plugins/rabbitmq_munin
+    ln -s $(which rabbitmq_munin) /etc/munin/plugins/
 
 Once munin can run the plugin, you can configure it as any other munin plugin 
 (in /etc/munin/plugin-conf.d/munin-node) and the config will look like this::
