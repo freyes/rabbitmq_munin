@@ -19,6 +19,10 @@ This plugin monitor the following stats:
 * Exchanges, number of exchanges.
 * Queues, number of queues.
 
+.. image:: shots/rabbitmq_munin-day.png
+
+.. image:: shots/rabbitmq_munin_pubmsgs-day.png
+
 Installation
 ------------
 
@@ -40,11 +44,12 @@ included `setup.py` script for installation::
 To make the plugin available to the munin-node you can run the following commands::
 
     ln -s $(which rabbitmq_munin) /etc/munin/plugins/
+    ln -s $(which rabbitmq_munin_pubmsgs) /etc/munin/plugins/
 
 Once munin can run the plugin, you can configure it as any other munin plugin 
 (in /etc/munin/plugin-conf.d/munin-node) and the config will look like this::
 
-    [rabbitmq_munin]
+    [rabbitmq_munin*]
     env.username guest
     env.password guest
     env.server localhost:15672
