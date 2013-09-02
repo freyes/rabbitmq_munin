@@ -37,5 +37,6 @@ setup(
     entry_points="""
     [console_scripts]
     rabbitmq_munin = rabbitmq_munin:main
+    rabbitmq_munin_pubmsgs = rabbitmq_munin:main_published_messages
     """,
 )
